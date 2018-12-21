@@ -1,5 +1,18 @@
 package com.codecool.car_race;
 
-public class Race {
+class Race {
+
+    void simulateRace() {
+
+    }
+
+    void printRaceResults() {
+
+    }
+
+    boolean isThereABrokenTruck() {
+        boolean brokenTruckPresent = false;
+        return brokenTruckPresent;
+    }
 
 }

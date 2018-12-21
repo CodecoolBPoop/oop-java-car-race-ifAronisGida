@@ -2,15 +2,19 @@ package com.codecool.car_race;
 
 import java.util.Random;
 
-public class Weather {
+class Weather {
 
     private boolean isRaining;
 
-    public Weather () {
+    Weather () {
         setRaining();
     }
 
-    public void setRaining () {
+    public boolean getRain () {
+        return isRaining;
+    }
+
+    void setRaining () {
         Random r = new Random();
         isRaining = false;
         if (r.nextDouble() <= 0.3) isRaining = true;

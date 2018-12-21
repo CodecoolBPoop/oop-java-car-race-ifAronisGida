@@ -6,15 +6,15 @@ class Weather {
 
     private boolean isRaining;
 
-    Weather () {
+    Weather() {
         setRaining();
     }
 
-    public boolean getRain () {
+    public boolean getRain() {
         return isRaining;
     }
 
-    void setRaining () {
+    void setRaining() {
         Random r = new Random();
         isRaining = false;
         if (r.nextDouble() <= 0.3) isRaining = true;

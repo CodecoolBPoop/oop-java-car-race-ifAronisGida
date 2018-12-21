@@ -35,15 +35,27 @@ class Race {
                 motorcycle.moveForAnHour();
             }
             for (Truck truck: trucks) {
-                truck.prepareForLap(race);
+                truck.prepareForLap();
                 truck.moveForAnHour();
             }
         }
     }
 
     void printRaceResults() {
-
-
+        System.out.println("Cars: \n");
+        for (Car car: cars) {
+            System.out.println(car.getName() + ": " + car.getDistanceTraveled() + " km(s)");
+        }
+        System.out.println("\n");
+        System.out.println("Motorcycles: \n");
+        for (Motorcycle motorcycle: motorcycles) {
+            System.out.println(motorcycle.getName() + ": " + motorcycle.getDistanceTraveled() + " km(s)");
+        }
+        System.out.println("\n");
+        System.out.println("Trucks: \n");
+        for (Truck truck: trucks) {
+            System.out.println(truck.getName() + ": " + truck.getDistanceTraveled() + " km(s)");
+        }
     }
 
     boolean isThereABrokenTruck() {

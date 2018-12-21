@@ -15,6 +15,10 @@ public class Car extends Vehicle {
         speed = normalSpeed;
     }
 
+    String getName() {
+        return name;
+    }
+
     private String generateCarName() {
         ArrayList<String> listOfNames = new ArrayList<>(Arrays.asList("Aurora",
                 "Dusk",

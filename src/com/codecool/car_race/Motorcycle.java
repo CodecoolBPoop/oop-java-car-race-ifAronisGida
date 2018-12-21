@@ -16,6 +16,10 @@ class Motorcycle extends Vehicle {
         motorcycleNumber++;
     }
 
+    String getName() {
+        return name;
+    }
+
     private String generateMotorcycleName() {
         StringBuilder sb = new StringBuilder();
         sb.append("Motorcycle ");

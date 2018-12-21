@@ -13,6 +13,10 @@ class Truck extends Vehicle {
         name = generateTruckName();
     }
 
+    int getName() {
+        return name;
+    }
+
     int getBreakdownTurnsLeft() {
         return breakdownTurnsLeft;
     }
@@ -23,10 +27,16 @@ class Truck extends Vehicle {
         return truckNumber;
     }
 
-    void prepareForLap(Race race) {
+    void prepareForLap() {
         Random r = new Random();
-        if (breakdownTurnsLeft == 0 && r.nextDouble() <= 0.05) breakdownTurnsLeft += 2;
-        else if (breakdownTurnsLeft < 0) breakdownTurnsLeft -= 1;
+        if (breakdownTurnsLeft == 0 && r.nextDouble() <= 0.05) {
+            speed = 0;
+            breakdownTurnsLeft += 2;
+        }
+        else if (breakdownTurnsLeft < 0) {
+            breakdownTurnsLeft -= 1;
+        }
+        else speed = 100;
     }
 
 }

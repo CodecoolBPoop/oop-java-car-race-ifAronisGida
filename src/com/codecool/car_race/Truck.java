@@ -33,10 +33,10 @@ class Truck extends Vehicle {
             speed = 0;
             breakdownTurnsLeft += 2;
         }
-        else if (breakdownTurnsLeft < 0) {
+        if (breakdownTurnsLeft > 0) {
             breakdownTurnsLeft -= 1;
         }
-        else speed = 100;
+        if (breakdownTurnsLeft == 0) speed = 100;
     }
 
 }

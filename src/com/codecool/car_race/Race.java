@@ -42,17 +42,17 @@ class Race {
     }
 
     void printRaceResults() {
-        System.out.println("Cars: \n");
+        System.out.println("Cars:");
         for (Car car: cars) {
             System.out.println(car.getName() + ": " + car.getDistanceTraveled() + " km(s)");
         }
         System.out.println("\n");
-        System.out.println("Motorcycles: \n");
+        System.out.println("Motorcycles:");
         for (Motorcycle motorcycle: motorcycles) {
             System.out.println(motorcycle.getName() + ": " + motorcycle.getDistanceTraveled() + " km(s)");
         }
         System.out.println("\n");
-        System.out.println("Trucks: \n");
+        System.out.println("Trucks:");
         for (Truck truck: trucks) {
             System.out.println(truck.getName() + ": " + truck.getDistanceTraveled() + " km(s)");
         }

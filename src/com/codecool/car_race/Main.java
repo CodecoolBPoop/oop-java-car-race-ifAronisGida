@@ -13,7 +13,7 @@ public class Main {
         ArrayList<Motorcycle> listOfMotors = new ArrayList<>();
         ArrayList<Truck> listOfTrucks = new ArrayList<>();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             Car car = new Car();
             Motorcycle motor = new Motorcycle();
             Truck truck = new Truck();

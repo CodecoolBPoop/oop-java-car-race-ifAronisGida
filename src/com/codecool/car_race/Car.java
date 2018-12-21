@@ -7,13 +7,14 @@ import java.util.Random;
 public class Car extends Vehicle {
 
     private String name;
+    private int speed;
 
-    Car (int startSpeed) {
-        super(startSpeed);
-        name = generateName();
+    Car () {
+        speed = generateSpeed();
+        name = generateCarName();
     }
 
-    private String generateName() {
+    private String generateCarName() {
         ArrayList<String> listOfNames = new ArrayList<>(Arrays.asList("Aurora",
                 "Dusk",
                 "Flux",
@@ -33,5 +34,11 @@ public class Car extends Vehicle {
         sb.append(listOfNames.get(r.nextInt(10)));
 
         return sb.toString();
+    }
+
+    private int generateSpeed() {
+        Random r = new Random();
+        int speed = r.nextInt(31) + 80;
+        return speed;
     }
 }

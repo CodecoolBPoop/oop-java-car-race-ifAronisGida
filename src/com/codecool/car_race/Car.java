@@ -45,6 +45,10 @@ public class Car extends Vehicle {
     }
 
     void prepareForLap(Race race) {
-
+        if (race.isThereABrokenTruck()) {
+            speed = 75;
+        } else {
+            speed = normalSpeed;
+        }
     }
 }

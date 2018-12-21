@@ -22,7 +22,8 @@ class Truck extends Vehicle {
 
     void prepareForLap(Race race) {
         Random r = new Random();
-        if (r.nextDouble() <= 0.05) breakdownTurnsLeft += 2;
+        if (breakdownTurnsLeft == 0 && r.nextDouble() <= 0.05) breakdownTurnsLeft += 2;
+        else if (breakdownTurnsLeft < 0) breakdownTurnsLeft -= 1;
     }
 
 }

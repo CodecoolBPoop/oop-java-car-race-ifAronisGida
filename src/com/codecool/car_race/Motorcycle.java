@@ -29,6 +29,8 @@ class Motorcycle extends Vehicle {
         if (race.isItRaining()) {
             Random r = new Random();
             speed = speed - (r.nextInt(46) + 5);
+        } else {
+            speed = normalSpeed;
         }
     }
 }

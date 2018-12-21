@@ -20,11 +20,29 @@ class Race {
         trucks = listOfTrucks;
     }
 
-    void simulateRace() {
+    void simulateRace(Race race) {
+        Weather weather = new Weather();
 
+        for (int i = 0; i < 50; i++) {
+            weather.setRaining();
+            isRaining = weather.getRain();
+            for (Car car: cars) {
+                car.prepareForLap(race);
+                car.moveForAnHour();
+            }
+            for (Motorcycle motorcycle: motorcycles) {
+                motorcycle.prepareForLap(race);
+                motorcycle.moveForAnHour();
+            }
+            for (Truck truck: trucks) {
+                truck.prepareForLap(race);
+                truck.moveForAnHour();
+            }
+        }
     }
 
     void printRaceResults() {
+
 
     }
 

@@ -43,4 +43,8 @@ public class Car extends Vehicle {
         int speed = r.nextInt(31) + 80;
         return speed;
     }
+
+    void prepareForLap(Race race) {
+
+    }
 }

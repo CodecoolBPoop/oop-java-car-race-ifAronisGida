@@ -1,0 +1,28 @@
+package com.codecool.car_race;
+
+import java.util.Random;
+
+class Truck extends Vehicle {
+
+    private int speed;
+    private int breakdownTurnsLeft;
+    private int name;
+
+    Truck () {
+        speed = 100;
+        breakdownTurnsLeft = 0;
+        name = generateTruckName();
+    }
+
+    private int generateTruckName() {
+        Random r = new Random();
+        int truckNumber = r.nextInt(1001);
+        return truckNumber;
+    }
+
+    void prepareForLap(Race race) {
+        Random r = new Random();
+        if (r.nextDouble() <= 0.05) breakdownTurnsLeft += 2;
+    }
+
+}

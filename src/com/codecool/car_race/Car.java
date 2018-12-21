@@ -8,10 +8,12 @@ public class Car extends Vehicle {
 
     private String name;
     private int speed;
+    private int normalSpeed;
 
     Car () {
-        speed = generateSpeed();
+        normalSpeed = generateSpeed();
         name = generateCarName();
+        speed = normalSpeed;
     }
 
     private String generateCarName() {

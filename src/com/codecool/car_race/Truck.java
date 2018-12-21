@@ -13,6 +13,10 @@ class Truck extends Vehicle {
         name = generateTruckName();
     }
 
+    int getBreakdownTurnsLeft() {
+        return breakdownTurnsLeft;
+    }
+
     private int generateTruckName() {
         Random r = new Random();
         int truckNumber = r.nextInt(1001);

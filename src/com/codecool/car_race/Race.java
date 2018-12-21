@@ -30,6 +30,9 @@ class Race {
 
     boolean isThereABrokenTruck() {
         boolean brokenTruckPresent = false;
+        for (Truck truck: trucks) {
+            if (truck.getBreakdownTurnsLeft() > 0) brokenTruckPresent = true;
+        }
         return brokenTruckPresent;
     }
 

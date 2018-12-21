@@ -7,7 +7,6 @@ import java.util.Random;
 public class Car extends Vehicle {
 
     private String name;
-    private int speed;
     private int normalSpeed;
 
     Car () {

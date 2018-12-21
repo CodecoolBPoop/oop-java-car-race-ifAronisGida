@@ -5,7 +5,6 @@ import java.util.Random;
 class Motorcycle extends Vehicle {
 
     private int normalSpeed;
-    private int speed;
     private String name;
 
     private static int motorcycleNumber = 1;

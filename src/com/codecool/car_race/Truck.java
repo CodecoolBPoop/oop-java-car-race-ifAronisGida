@@ -4,7 +4,6 @@ import java.util.Random;
 
 class Truck extends Vehicle {
 
-    private int speed;
     private int breakdownTurnsLeft;
     private int name;
 

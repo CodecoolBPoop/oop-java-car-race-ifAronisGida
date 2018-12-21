@@ -6,11 +6,6 @@ class Vehicle {
 
     Vehicle () {
         distanceTraveled = 0;
-
-    }
-
-    void prepareForLap(Race race) {
-
     }
 
     void moveForAnHour() {

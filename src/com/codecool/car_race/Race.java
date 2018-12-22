@@ -26,6 +26,7 @@ class Race {
         for (int i = 0; i < 50; i++) {
             weather.setRaining();
             isRaining = weather.getRain();
+            System.out.println("raining: " + isRaining);
             for (Car car: cars) {
                 car.prepareForLap(race);
                 car.moveForAnHour();

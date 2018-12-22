@@ -53,5 +53,6 @@ public class Car extends Vehicle {
         } else {
             speed = normalSpeed;
         }
+        System.out.println("set " + name + "'s speed to: " + speed);
     }
 }

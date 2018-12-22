@@ -33,10 +33,11 @@ class Truck extends Vehicle {
             speed = 0;
             breakdownTurnsLeft += 2;
         }
-        if (breakdownTurnsLeft > 0) {
+        else if (breakdownTurnsLeft > 0) {
             breakdownTurnsLeft -= 1;
         }
         if (breakdownTurnsLeft == 0) speed = 100;
+        System.out.println("breakdownturnsleft for truck " + name +": " + breakdownTurnsLeft);
     }
 
 }
